@@ -8,14 +8,14 @@ My first programming project built while learning C.
 - Division
 - Invalid Choice Handling
 - Division by Zero Check
+- Continue Option
 
 ## Version
 
-Current Version: V1.1
+Current Version: V1.2
 
 ## Future Updates
 
-- Continue Option
 - History Feature
 - Function-Based Structure
 - File-Based History Storage
