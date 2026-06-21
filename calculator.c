@@ -2,6 +2,9 @@
 void main(){
     int a,b,sum,multiply,operator,subtraction;
     float division;
+    char repeat;
+    do
+    {
     printf("Enter first number : ");
     scanf("%d",&a);
     printf("Enter second number : ");
@@ -34,5 +37,12 @@ void main(){
     }
     else{
         printf("Please upload a valid command :)");
+    }
+    printf("\nDo you wanna use it again (y/n) - ");
+    scanf(" %c",&repeat);
+    } while (repeat=='y'||repeat=='Y');
+    if(repeat=='n'||repeat=='N')
+    {
+        printf("Thanks for using our calculator");
     }
 }
