@@ -13,7 +13,7 @@ My first programming project built while learning C.
 
 ## Version
 
-Current Version: V1.2
+Current Version: V1.4
 
 ## Future Updates
 
