@@ -1,7 +1,23 @@
 #include<stdio.h>
+int ADD(int x,int y){
+    printf("The addition of given number is : %d",x+y);
+}
+int MUL(int x,int y){
+    printf("The multiplication of given number is : %d",x*y);
+}
+float DIV(float x, float y) {
+    if (y == 0)
+        printf("Division by zero is not allowed.\n");
+    else
+        printf("The division of given number is = %.2f", x / y);
+        // %.2f ka mtlb hai .2 btarha h ki . ke do age tk ke btao aur f mane float
+}
+int SUB(int x,int y){
+    printf("The substraction of given number is : %d",x-y);
+}
+
 void main(){
-    int a,b,sum,multiply,operator,subtraction;
-    float division;
+    int a,b,operator;
     char repeat;
     do
     {
@@ -12,28 +28,22 @@ void main(){
     printf("INSTRUCTIONS \n 1 for sum \n 2 for multiply \n 3 for subtraction \n 4 for divide ");
     printf("\nEnter command : ");
     scanf("%d",&operator);
-    if(b==0&&operator==4){
-        printf("Division by zero is not allowed");
-    }
-    else if (operator==1)
+
+    if (operator==1)
     {
-        sum=a+b;
-        printf("The sum of given number is : %d",sum);
+        ADD(a,b);  
     }
     else if (operator==2)
     {
-        multiply=a*b;
-        printf("The multiplication of given number is : %d",multiply);
+        MUL(a,b);
     }
     else if (operator==3)
     {
-        subtraction=a-b;
-        printf("The subtraction of given number is : %d",subtraction);
+        SUB(a,b);
     }
     else if (operator==4)
     {
-        division=(float)a/b;
-        printf("The division of given number is : %.2f",division);
+        DIV(a,b);
     }
     else{
         printf("Please upload a valid command :)");
